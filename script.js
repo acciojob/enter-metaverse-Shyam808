@@ -1,11 +1,11 @@
 document.getElementById("enterBtn").addEventListener("click", () => {
   const statusElement = document.getElementById("status");
 
-  // Replace <p> with <h1> while preserving the ID and changing the text
-  const p = document.createElement("h1");
-  p.id = "status";
-  p.textContent = "Entered Metaverse";
+  // Create <h1> element with updated text and same ID
+  const h1 = document.createElement("h1");
+  h1.id = "status";
+  h1.textContent = "Entered Metaverse";
 
-  // Replace the original element
+  // Replace the original <p> with the new <h1>
   statusElement.replaceWith(h1);
 });
